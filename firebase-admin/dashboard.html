@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Admin Dashboard</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h2>Administrator Dashboard</h2>
+      <button id="logoutBtn" class="logoutBtn">Logout</button>
+    </header>
+
+    <section class="category-section">
+      <h3>Category Management</h3>
+      <button id="addCategoryBtn" class="addBtn">Add Category</button>
+      <table>
+        <thead>
+          <tr>
+            <th>No</th>
+            <th>Category ID</th>
+            <th>Category Name</th>
+            <th>Description</th>
+            <th>Action</th>
+          </tr>
+        </thead>
+        <tbody id="categoryBody">
+          <!-- Rows will be added dynamically -->
+        </tbody>
+      </table>
+    </section>
+
+    
+      <section class="product-section">
+  <h3>Product Management</h3>
+  <button id="addProductBtn" class="addBtn">Add Product</button>
+  <table>
+    <thead>
+      <tr>
+        <th>No</th>
+        <th>Product ID</th>
+        <th>category</th>
+        <th>Product Name</th>
+        <th>Description</th>
+        <th>Action</th>
+        
+      </tr>
+    </thead>
+    <tbody id="productBody">
+      <!-- Product rows will be added dynamically -->
+    </tbody>
+  </table>
+</section>
+
+  </div>
+
+
+
+  <script type="module" src="dashboard.js"></script>
+</body>
+</html>
